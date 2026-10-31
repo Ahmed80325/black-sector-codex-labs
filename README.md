@@ -5,7 +5,9 @@
 
 **How we used OpenAI Codex, carefully engineered prompts, Skills, and Plugins to transform real-world vulnerability research into interactive educational Labs, integrate them into BLACK SECTOR, and make them publicly accessible for learning.**
 
-**Live Platform:** https://blacksector.cc
+### Explore the Live Labs
+
+**[BLACK SECTOR — Interactive Cybersecurity Labs](https://blacksector.cc/labs/)**
 
 ---
 
@@ -27,27 +29,29 @@ We wanted learners to understand:
 
 To accomplish this, we combined extensive security research, structured prompt engineering, OpenAI Codex, Skills, Plugins, and human technical review.
 
-**The result is a collection of interactive cybersecurity Labs integrated into the BLACK SECTOR website and made available to the public for educational purposes.**
+**The result is a collection of interactive cybersecurity Labs integrated into BLACK SECTOR and made publicly accessible for educational purposes.**
+
+**[Explore the Final Result — BLACK SECTOR Labs](https://blacksector.cc/labs/)**
 
 ---
 
 ## The Challenge
 
-Thousands of security researchers publish vulnerability writeups describing real-world application weaknesses.
+Thousands of cybersecurity researchers publish vulnerability writeups describing real-world application weaknesses.
 
-These reports contain valuable technical knowledge, but they often assume that readers already understand the application's architecture, intended workflows, and security boundaries.
+These reports contain valuable technical knowledge, but they often assume readers already understand the application's architecture, intended workflows, and security boundaries.
 
 A learner may understand how an exploit works without fully understanding why the vulnerability exists.
 
-We wanted to solve this educational problem.
+We wanted to address this educational challenge.
 
 Instead of simply presenting vulnerability descriptions, we wanted to build interactive scenarios that explain the relationship between normal application functionality and unexpected vulnerable behavior.
 
-The challenge involved three main areas:
+The challenge involved three major areas:
 
 1. Researching and analyzing a large collection of real-world vulnerability writeups.
 2. Converting their technical insights into accurate, structured educational scenarios.
-3. Building and integrating those scenarios into a public learning platform.
+3. Building, integrating, and publishing those scenarios through a publicly accessible learning platform.
 
 This required more than generating explanations. It required a consistent research methodology, technical validation, and practical software development.
 
@@ -55,11 +59,11 @@ This required more than generating explanations. It required a consistent resear
 
 ## Research Foundation: More Than 1,000 Real-World Writeups
 
-Our research process involved studying and analyzing more than **1,000 publicly available security vulnerability writeups**.
+Our research process involved studying and analyzing more than **1,000 publicly available, real-world security vulnerability writeups**.
 
-These reports provided insights into real-world vulnerability patterns, application behavior, security boundaries, exploitation conditions, and recurring implementation mistakes.
+These reports provided insights into vulnerability patterns, application behavior, security boundaries, exploitation conditions, and recurring implementation mistakes.
 
-We focused on understanding the underlying technical concepts rather than copying published reports.
+We focused on understanding the underlying technical concepts rather than simply copying published reports.
 
 ### Our Research Objectives
 
@@ -78,7 +82,7 @@ For each relevant vulnerability concept, we focused on identifying:
 
 The purpose of researching these reports was not to publish 1,000 copies of existing writeups.
 
-Instead, we used their technical insights to identify useful security concepts and develop educational scenarios that explain how vulnerabilities occur.
+Instead, we used their technical insights to identify meaningful security concepts and develop educational scenarios explaining how vulnerabilities occur.
 
 Multiple reports may demonstrate similar underlying weaknesses, while others reveal unique implementation mistakes.
 
@@ -98,14 +102,16 @@ Rather than treating Codex as a simple code generator, we incorporated it into a
 
 Codex helped us approach complex technical tasks through organized instructions, reusable workflows, and iterative development.
 
+### Our Development Approach
+
 Our methodology combined:
 
-- **OpenAI Codex** for AI-assisted software development and technical analysis.
-- **Advanced Prompt Engineering** for structured, consistent instructions.
-- **Codex Skills** for reusable task-specific workflows.
-- **Plugins** for extending relevant research and development capabilities.
-- **Real-World Security Research** for technical grounding.
-- **Human Technical Review** for validation and quality control.
+- **OpenAI Codex** — AI-assisted software development and technical analysis.
+- **Advanced Prompt Engineering** — Structured instructions designed to produce consistent, technically meaningful outputs.
+- **Codex Skills** — Reusable instructions and specialized workflows.
+- **Plugins** — Additional capabilities supporting research and development tasks.
+- **Real-World Security Research** — Technical grounding from published vulnerability reports.
+- **Human Technical Review** — Validation, accuracy checks, and quality control.
 
 The objective was to use AI to accelerate technical work without replacing independent verification or human engineering judgment.
 
@@ -119,41 +125,41 @@ A generic instruction such as "create a cybersecurity Lab" was not sufficient fo
 
 We needed outputs that were technically meaningful, educationally structured, and consistent with the existing BLACK SECTOR platform.
 
-### Prompt Design Principles
-
-Our prompting approach emphasized several requirements.
-
-#### 1. Understand the Vulnerability First
+### 1. Understand the Vulnerability First
 
 Before creating educational content, the workflow needed to identify the actual security weakness and the conditions that make it possible.
 
-#### 2. Distinguish Normal and Vulnerable Behavior
+The goal was to understand the vulnerability rather than simply reproduce an exploit.
 
-The analysis needed to explain the application's intended behavior before introducing the vulnerable interaction.
+### 2. Distinguish Normal and Vulnerable Behavior
 
-#### 3. Identify the Root Cause
+The analysis needed to explain the application's intended functionality before introducing the vulnerable interaction.
+
+This helped establish the context necessary to understand why the unexpected behavior represented a security weakness.
+
+### 3. Identify the Root Cause
 
 The explanation needed to focus on the underlying technical mistake rather than simply demonstrating an exploitation technique.
 
-#### 4. Maintain Technical Accuracy
+### 4. Maintain Technical Accuracy
 
 Technical explanations, HTTP requests, HTTP responses, and vulnerability conditions needed to be logically consistent.
 
-#### 5. Separate Facts from Assumptions
+### 5. Separate Facts from Assumptions
 
-Published research findings should be distinguished from illustrative examples or reconstructed application behavior.
+Published research findings needed to be distinguished from illustrative examples or reconstructed application behavior.
 
-#### 6. Preserve Educational Consistency
+### 6. Preserve Educational Consistency
 
 New scenarios needed to follow a consistent learning structure while respecting the established BLACK SECTOR design and functionality.
 
-#### 7. Support Different Difficulty Levels
+### 7. Support Different Difficulty Levels
 
-The educational material needed to progress from relatively straightforward vulnerabilities to more complex scenarios requiring deeper technical reasoning.
+Educational material needed to progress from relatively straightforward vulnerabilities to more complex scenarios requiring deeper technical reasoning.
 
-#### 8. Review Before Publication
+### 8. Review Before Publication
 
-Generated explanations and implementations needed technical review rather than being accepted automatically.
+Generated explanations and implementations required technical review rather than automatic acceptance.
 
 ### Why This Matters
 
@@ -167,7 +173,7 @@ Instead of requesting isolated explanations, we directed Codex toward structured
 
 ## Using Codex Skills and Plugins
 
-Alongside our prompt engineering methodology, we used Codex Skills and Plugins to support specialized tasks across our workflow.
+Alongside prompt engineering, we used Codex Skills and Plugins to support specialized tasks across our workflow.
 
 These capabilities helped us organize the development process beyond individual prompts.
 
@@ -250,11 +256,13 @@ We reviewed scenario logic, technical explanations, HTTP examples, and applicati
 
 The objective was to reduce inaccurate explanations, unrealistic interactions, and inconsistencies.
 
-### Stage 7 — Website Integration and Publication
+### Stage 7 — Website Integration and Public Release
 
-Finally, we integrated the educational Labs into the BLACK SECTOR platform and made them publicly accessible for learning.
+Finally, we integrated the educational Labs into the BLACK SECTOR website and made them publicly accessible for learning.
 
-This transformed the research and development process into a usable educational experience.
+This transformed the research and development process into a real, usable educational experience.
+
+**[View the Published Labs](https://blacksector.cc/labs/)**
 
 ---
 
@@ -386,6 +394,8 @@ The learner can understand:
 
 This approach is central to how BLACK SECTOR presents practical security concepts.
 
+**[Explore the Interactive Labs](https://blacksector.cc/labs/)**
+
 ---
 
 ## Building the Interactive Labs
@@ -403,7 +413,7 @@ Our educational experience emphasizes:
 3. An overview of the expected functionality.
 4. Normal HTTP interactions.
 5. Vulnerable HTTP interactions.
-6. A comparison of the observed behavior.
+6. A comparison of observed behavior.
 7. Root cause analysis.
 8. Technical explanations and learning outcomes.
 
@@ -437,9 +447,9 @@ Rather than keeping our research as static documentation or isolated experiments
 
 Learners can explore realistic vulnerability scenarios, compare normal application behavior with vulnerable behavior, examine HTTP requests and responses, and understand the underlying root causes of security weaknesses.
 
-### Live Integration
+### Live Website Integration
 
-The Labs are integrated into BLACK SECTOR rather than being presented as a separate collection of research notes.
+The Labs are integrated directly into BLACK SECTOR rather than being presented as a separate collection of research notes.
 
 This allows learners to access the educational content through the platform's existing learning environment.
 
@@ -449,9 +459,9 @@ We made the educational Labs available through the public website so that learne
 
 The goal is to make practical cybersecurity knowledge more accessible, including to Arabic-speaking learners and the wider international security community.
 
-### Explore the Live Platform
+### The Final Result
 
-**BLACK SECTOR:** https://blacksector.cc
+**[Explore BLACK SECTOR Interactive Cybersecurity Labs](https://blacksector.cc/labs/)**
 
 **The result is a publicly accessible cybersecurity education platform where real-world research becomes practical learning.**
 
@@ -483,7 +493,7 @@ Technical concepts are presented through structured educational scenarios rather
 
 ### 6. Real Product Integration
 
-The educational Labs were integrated into an actual website and made available for public learning.
+The educational Labs were integrated into a live website and made publicly accessible.
 
 ### 7. Continuous Development
 
@@ -501,7 +511,7 @@ Our methodology emphasizes:
 - Reviewing HTTP requests and responses.
 - Distinguishing real research findings from illustrative examples.
 - Avoiding misleading claims about vulnerability behavior.
-- Respecting the original research and published sources.
+- Respecting original research and published sources.
 - Maintaining educational context.
 - Supporting responsible security research.
 - Performing practical testing only in authorized environments.
@@ -514,7 +524,7 @@ For this reason, human technical review remains an essential part of our workflo
 
 ## Lessons Learned
 
-Building BLACK SECTOR through this methodology reinforced several lessons.
+Building BLACK SECTOR through this methodology reinforced several important lessons.
 
 ### Prompt Quality Matters
 
@@ -575,11 +585,30 @@ Our goal is also to share practical knowledge with Arabic-speaking technical com
 
 ---
 
-## Explore BLACK SECTOR
+## Explore the Live BLACK SECTOR Labs
+
+### Real Research. AI-Assisted Development. Practical Education.
+
+The educational Labs are now integrated into BLACK SECTOR and publicly accessible.
+
+Through the platform, learners can explore:
+
+- Realistic vulnerability scenarios.
+- Normal application behavior.
+- Vulnerable application behavior.
+- Technical root cause explanations.
+- Practical HTTP requests and responses.
+- Progressive cybersecurity learning experiences.
+
+### Access the Labs
+
+**[Visit BLACK SECTOR Labs](https://blacksector.cc/labs/)**
+
+### Project Information
 
 **Project:** BLACK SECTOR
 
-**Official Website:** https://blacksector.cc
+**Live Educational Labs:** https://blacksector.cc/labs/
 
 **Focus Areas:**
 
@@ -606,8 +635,12 @@ The security examples provided in this repository are intended for educational p
 
 ---
 
-### BLACK SECTOR — Learn. Build. Secure.
+## BLACK SECTOR — Learn. Build. Secure.
 
 **From 1,000+ Real-World Security Writeups → Structured Codex Workflows → Interactive Cybersecurity Labs → Public Learning on BLACK SECTOR.**
 
-**Explore the platform:** https://blacksector.cc
+### Explore the Final Result
+
+**[BLACK SECTOR — Live Interactive Labs](https://blacksector.cc/labs/)**
+
+*Turning real-world cybersecurity research into practical, publicly accessible education with AI-assisted engineering.*
