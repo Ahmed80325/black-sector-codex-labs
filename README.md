@@ -1,17 +1,21 @@
 
 # BLACK SECTOR × OpenAI Codex
 
-### From 1,000+ Real-World Vulnerability Writeups to Interactive Cybersecurity Labs
+### From 1,000+ Real-World Security Writeups to Interactive Cybersecurity Labs
 
-**Real Research · Engineered Prompts · Codex Skills & Plugins · Practical Cybersecurity Education**
+**Real-World Research · OpenAI Codex · Engineered Prompts · Skills & Plugins · Practical Cybersecurity Education**
 
 BLACK SECTOR is an independent cybersecurity education platform that transforms real-world vulnerability research into structured, interactive learning experiences.
 
-Through a carefully designed workflow using **OpenAI Codex, advanced prompt engineering, Skills, and Plugins**, we researched and analyzed more than **1,000 publicly available security vulnerability writeups**.
+Using **OpenAI Codex, carefully engineered prompts, reusable Skills, and Plugins**, we developed a research-to-development methodology built around the analysis of more than **1,000 publicly available vulnerability writeups**.
 
-We used the findings to understand vulnerability patterns, identify technical root causes, assess educational difficulty, organize learning scenarios, and develop interactive cybersecurity Labs.
+Our objective was not simply to collect vulnerabilities or generate explanations.
 
-The resulting Labs were integrated directly into the BLACK SECTOR website and made publicly accessible for learning.
+We wanted to understand **why vulnerabilities occur, how applications are supposed to behave, what changes when security controls fail, and how those concepts can be taught effectively**.
+
+We used these insights to develop, organize, and classify educational scenarios, then integrated the resulting interactive Labs into the BLACK SECTOR website.
+
+**The final result is publicly accessible for cybersecurity learners.**
 
 ### Explore the Live Project
 
@@ -27,18 +31,20 @@ The resulting Labs were integrated directly into the BLACK SECTOR website and ma
 2. [What Are BLACK SECTOR Labs?](#what-are-black-sector-labs)
 3. [The Research Foundation](#the-research-foundation)
 4. [How We Used OpenAI Codex](#how-we-used-openai-codex)
-5. [Prompt Engineering, Skills & Plugins](#prompt-engineering-skills--plugins)
+5. [Prompt Engineering, Skills and Plugins](#prompt-engineering-skills-and-plugins)
 6. [AI-Assisted Vulnerability Classification](#ai-assisted-vulnerability-classification)
 7. [Inside an Interactive Lab](#inside-an-interactive-lab)
-8. [Normal vs. Vulnerable Behavior](#normal-vs-vulnerable-behavior)
-9. [Connecting Labs to Original Research](#connecting-labs-to-original-research)
-10. [The Complete Development Workflow](#the-complete-development-workflow)
-11. [From Research to a Public Platform](#from-research-to-a-public-platform)
-12. [Educational Value](#educational-value)
-13. [Technical Accuracy and Quality Control](#technical-accuracy-and-quality-control)
-14. [Lessons Learned](#lessons-learned)
-15. [Future Development](#future-development)
-16. [Explore BLACK SECTOR](#explore-black-sector)
+8. [BLACK SECTOR Labs — Screenshots](#black-sector-labs--screenshots)
+9. [Normal vs. Vulnerable Behavior](#normal-vs-vulnerable-behavior)
+10. [Connecting Labs to Original Research](#connecting-labs-to-original-research)
+11. [Complete Development Workflow](#complete-development-workflow)
+12. [From Research to a Public Platform](#from-research-to-a-public-platform)
+13. [Educational Value](#educational-value)
+14. [Technical Accuracy and Quality Control](#technical-accuracy-and-quality-control)
+15. [Lessons Learned](#lessons-learned)
+16. [Future Development](#future-development)
+17. [Frequently Asked Questions](#frequently-asked-questions)
+18. [Explore BLACK SECTOR](#explore-black-sector)
 
 ---
 
@@ -46,99 +52,105 @@ The resulting Labs were integrated directly into the BLACK SECTOR website and ma
 
 ### What Is BLACK SECTOR?
 
-BLACK SECTOR is a cybersecurity education platform designed to help students, developers, penetration testers, and security enthusiasts develop a deeper understanding of real-world vulnerabilities.
+BLACK SECTOR is a cybersecurity education platform focused on practical learning, realistic vulnerability scenarios, and technical understanding.
+
+The platform is designed for students, penetration testers, developers, security researchers, and cybersecurity enthusiasts who want to understand how real-world application vulnerabilities occur.
 
 Our educational philosophy is simple:
 
-> Understand how an application is supposed to work before studying how it can fail.
+> **Understand how an application is supposed to work before studying how it can fail.**
 
-Traditional vulnerability explanations often focus on exploitation techniques without fully explaining the application's intended functionality.
+Many vulnerability explanations focus on exploitation techniques without fully explaining the application's intended functionality or security boundaries.
 
-BLACK SECTOR approaches the problem differently.
+BLACK SECTOR approaches this differently.
 
 We want learners to understand:
 
-- How applications normally behave.
+- How an application normally behaves.
+- What legitimate application requests look like.
 - Which security controls should exist.
 - What changes when a vulnerability is introduced.
-- Why the security weakness occurs.
-- How the weakness can be identified.
-- How the issue can be prevented.
-- How similar vulnerabilities appear in different applications.
-
-Our focus is on **technical understanding, practical analysis, and progressive learning**.
+- Why the vulnerable behavior occurs.
+- Which implementation mistake causes the weakness.
+- How the issue can be identified and analyzed.
+- How developers can prevent similar vulnerabilities.
 
 ### Project Highlights
 
 | Area | Description |
 |---|---|
-| Research | More than 1,000 real-world security writeups analyzed |
+| Research | More than 1,000 real-world vulnerability writeups analyzed |
 | AI Development | OpenAI Codex |
-| Methodology | Engineered prompts, Skills, and Plugins |
-| Education | Interactive cybersecurity Labs |
-| Learning Model | Normal behavior vs. vulnerable behavior |
-| Technical Depth | HTTP analysis, root causes, and fixes |
-| Difficulty | Easy, Medium, and Advanced |
-| Research Sources | Public vulnerability reports and writeups |
+| AI Workflow | Engineered prompts, Skills, and Plugins |
+| Educational Product | Interactive cybersecurity Labs |
+| Learning Method | Normal vs. vulnerable application behavior |
+| Technical Content | HTTP requests, responses, root causes, and fixes |
+| Classification | Easy, Medium, and Advanced |
+| Research References | Public vulnerability reports and writeups |
 | Deployment | Integrated into BLACK SECTOR |
-| Accessibility | Publicly accessible educational content |
+| Access | Public educational website |
 
-**Note:** The 1,000+ figure refers to researched writeups, not the number of individual Labs or scenarios published.
+**Important:** The 1,000+ figure refers to researched security writeups, not the number of individual Labs or scenarios published on BLACK SECTOR.
 
 ---
 
 ## What Are BLACK SECTOR Labs?
 
-BLACK SECTOR Labs are interactive educational modules designed to explain real-world cybersecurity vulnerabilities through structured technical scenarios.
+BLACK SECTOR Labs are interactive educational modules designed to help learners understand cybersecurity vulnerabilities through structured technical scenarios.
 
-Instead of presenting a vulnerability as a simple definition or a sequence of exploitation commands, each Lab explores the underlying application behavior.
-
-A learner can investigate the context, understand the intended workflow, compare HTTP interactions, identify the vulnerability, and study its root cause.
+Instead of presenting a vulnerability as an isolated definition or exploitation technique, each Lab examines the relationship between the application's intended functionality, vulnerable behavior, and underlying security failure.
 
 ### The Learning Model
 
 ```mermaid
 flowchart TD
-    A["Select a Security Lab"] --> B["Explore a Vulnerability Scenario"]
-    B --> C["Understand Normal Behavior"]
-    C --> D["Inspect HTTP Requests and Responses"]
-    D --> E["Examine Vulnerable Behavior"]
-    E --> F["Identify the Root Cause"]
-    F --> G["Understand the Security Fix"]
-    G --> H["Develop Practical Security Knowledge"]
+    A["Choose a Security Lab"] --> B["Select a Vulnerability Scenario"]
+    B --> C["Understand the Application"]
+    C --> D["Study Normal Behavior"]
+    D --> E["Inspect HTTP Interactions"]
+    E --> F["Analyze Vulnerable Behavior"]
+    F --> G["Identify the Root Cause"]
+    G --> H["Understand the Fix"]
+    H --> I["Develop Practical Security Knowledge"]
 ```
 
 ### What Students Learn
 
-Each relevant scenario aims to teach:
-
 **Application Context**
 
-What the application does and which functionality is involved.
+Understand the affected functionality and the behavior expected from the application.
 
-**Expected Behavior**
+**Normal Behavior**
 
-How the application should respond under legitimate conditions.
+Study how legitimate requests should be processed and which security boundaries should be enforced.
 
 **Vulnerable Behavior**
 
-What happens when the application fails to enforce the intended security control.
-
-**Technical Root Cause**
-
-Which implementation mistake makes the vulnerability possible.
+Observe how a missing or incorrectly implemented security control changes application behavior.
 
 **HTTP Analysis**
 
-How request and response differences reveal important security behavior.
+Examine realistic HTTP requests and responses to understand the technical differences between expected and vulnerable interactions.
+
+**Root Cause Analysis**
+
+Identify the implementation mistake responsible for the weakness.
 
 **Security Remediation**
 
-How developers can prevent or correct the underlying weakness.
+Understand how the vulnerability could be prevented through appropriate security controls.
 
-### Explore the Educational Labs
+### Interactive Learning
 
-**[Visit BLACK SECTOR Labs](https://blacksector.cc/labs/)**
+The Labs provide an environment where learners can explore realistic vulnerability scenarios and study the technical reasoning behind them.
+
+The goal is not simply to memorize exploitation steps.
+
+**The goal is to build the analytical skills required to recognize similar security weaknesses in unfamiliar applications.**
+
+### Explore the Labs
+
+**[Visit BLACK SECTOR Interactive Labs](https://blacksector.cc/labs/)**
 
 ---
 
@@ -146,243 +158,268 @@ How developers can prevent or correct the underlying weakness.
 
 ### More Than 1,000 Real-World Security Writeups
 
-The foundation of our methodology is extensive research into publicly documented security vulnerabilities.
+The foundation of our educational methodology is extensive research into publicly documented security vulnerabilities.
 
-We researched and analyzed more than **1,000 published vulnerability writeups** to study real-world weaknesses, application behaviors, and recurring security patterns.
+Our process involved studying and analyzing more than **1,000 published security vulnerability writeups**.
 
-Our objective was not to reproduce the original reports.
+These reports provided technical insights into:
 
-Instead, we focused on extracting the underlying technical concepts that explain why vulnerabilities exist.
+- Real-world application weaknesses.
+- Vulnerability patterns.
+- Application workflows.
+- Security boundaries.
+- Exploitation conditions.
+- Authentication and authorization failures.
+- Unexpected application behavior.
+- Recurring implementation mistakes.
+- Root causes and possible remediations.
+
+Our objective was not to reproduce the reports directly.
+
+Instead, we focused on understanding their underlying technical lessons and transforming those lessons into structured educational scenarios.
 
 ### Research Objectives
 
-We investigated:
+For each relevant vulnerability concept, we focused on identifying:
 
-1. The affected application functionality.
-2. The intended application workflow.
-3. The security boundaries involved.
-4. The conditions required for exploitation.
-5. The vulnerable application behavior.
-6. The underlying implementation mistake.
-7. The technical root cause.
-8. The expected secure behavior.
-9. The educational complexity of the scenario.
-10. The suitability of the vulnerability for interactive learning.
+1. The application's intended functionality.
+2. The expected security controls.
+3. The legitimate application workflow.
+4. The conditions required for the vulnerability to exist.
+5. The abnormal behavior introduced by the weakness.
+6. The technical root cause.
+7. The differences between expected and vulnerable behavior.
+8. The educational complexity of the scenario.
+9. The most appropriate difficulty classification.
+10. The value of the vulnerability as a practical learning experience.
 
 ### Research-to-Education Model
 
 ```mermaid
 flowchart TD
-    A["1,000+ Public Vulnerability Writeups"] --> B["Research and Technical Analysis"]
+    A["1,000+ Public Security Writeups"] --> B["Technical Research"]
     B --> C["Identify Vulnerability Patterns"]
-    C --> D["Understand Normal and Vulnerable Behavior"]
-    D --> E["Root Cause Analysis"]
-    E --> F["Educational Difficulty Assessment"]
-    F --> G["Scenario Design"]
-    G --> H["Interactive BLACK SECTOR Labs"]
+    C --> D["Analyze Application Behavior"]
+    D --> E["Understand Root Causes"]
+    E --> F["Evaluate Educational Difficulty"]
+    F --> G["Design Learning Scenarios"]
+    G --> H["Build Interactive Labs"]
+    H --> I["Publish on BLACK SECTOR"]
 ```
 
 ### Research Quality Over Quantity
 
-Analyzing more than 1,000 reports does not mean publishing 1,000 copies of existing writeups.
+Researching more than 1,000 writeups does not mean publishing 1,000 copies of existing reports.
 
-Some reports describe similar underlying weaknesses, while others reveal unique implementation mistakes.
+Multiple reports may describe similar vulnerabilities, while others reveal unique implementation mistakes.
 
-Our methodology focuses on:
+Our approach emphasizes:
 
-- Identifying valuable security concepts.
+- Identifying meaningful security concepts.
+- Understanding recurring vulnerability patterns.
 - Avoiding unnecessary duplication.
-- Distinguishing real-world reports from illustrative examples.
-- Preserving technical accuracy.
-- Providing appropriate research attribution.
-- Selecting scenarios with meaningful educational value.
+- Separating research-backed findings from hypothetical examples.
+- Maintaining technical accuracy.
+- Preserving appropriate attribution.
+- Selecting scenarios with practical educational value.
 
-The goal is to transform published research into understandable, practical learning experiences.
+**Our objective is to transform real-world security research into meaningful learning, not simply increase the number of published scenarios.**
 
 ---
 
 ## How We Used OpenAI Codex
 
-OpenAI Codex became an important part of our research and engineering workflow.
+OpenAI Codex became an important component of the BLACK SECTOR research and software development workflow.
 
-We used Codex to support technical analysis, scenario development, software implementation, troubleshooting, and quality review.
+We used Codex to support technical analysis, educational scenario design, implementation, troubleshooting, and quality review.
 
-Rather than relying on generic instructions, we developed structured prompts with explicit technical requirements.
+Rather than relying on generic instructions, we developed structured prompts with explicit technical and educational requirements.
 
-Our workflow combined:
+Our methodology combined:
 
 - OpenAI Codex.
 - Carefully engineered prompts.
-- Reusable Skills.
-- Plugins.
-- Real-world vulnerability research.
-- Technical validation.
-- Human review.
+- Reusable Codex Skills.
+- Plugins supporting relevant workflows.
+- Public real-world vulnerability research.
+- Human technical review.
+- Iterative development and validation.
 
-### Codex as a Development Assistant
-
-Codex supported tasks involving:
+### Codex as an Engineering Assistant
 
 **Research Organization**
 
-Structuring technical information and identifying relevant vulnerability concepts.
+Supporting structured analysis of security information and identification of relevant vulnerability concepts.
 
-**Technical Analysis**
+**Vulnerability Analysis**
 
-Assisting with the interpretation of vulnerability conditions, application behavior, and root causes.
+Assisting with the interpretation of application behavior, exploitation conditions, and technical root causes.
 
 **Scenario Design**
 
-Helping translate technical findings into structured educational explanations.
+Helping translate technical findings into structured educational explanations and practical examples.
 
 **Software Development**
 
-Supporting the implementation and refinement of interactive educational interfaces.
+Supporting implementation and refinement of interactive educational interfaces.
 
 **Code Review**
 
-Assisting with the identification of potential implementation problems and improvement opportunities.
+Helping investigate implementation problems and explore potential improvements.
 
 **Troubleshooting**
 
-Investigating development issues and exploring corrective approaches.
+Analyzing technical issues and assisting with corrective approaches.
+
+**Performance Optimization**
+
+Supporting investigations into responsiveness, navigation, and application behavior.
 
 **Quality Improvement**
 
-Supporting consistency checks, testing strategies, and iterative refinement.
+Assisting with testing strategies, consistency checks, and iterative refinement.
 
-Codex accelerated parts of the workflow, while technical decisions and validation remained subject to human review.
+Codex helped accelerate parts of this workflow, while technical judgment and verification remained essential.
 
 ---
 
-## Prompt Engineering, Skills & Plugins
+## Prompt Engineering, Skills and Plugins
 
 ### Why Prompt Engineering Mattered
 
 A generic prompt such as:
 
-> Create a vulnerability Lab.
+> Create a cybersecurity vulnerability Lab.
 
-does not provide enough technical or educational context.
+was not sufficient for our requirements.
 
-Our requirements were more complex.
+We needed outputs that were technically meaningful, educationally structured, and consistent with the existing BLACK SECTOR platform.
 
-We needed a workflow capable of understanding the vulnerability, explaining expected application behavior, identifying the actual security failure, evaluating complexity, and preserving a consistent learning structure.
+Our prompting methodology emphasized understanding the application before attempting to explain the vulnerability.
 
-### Our Prompting Methodology
-
-We designed prompts around several principles.
+### Our Prompting Principles
 
 #### 1. Understand the Application
 
-Establish the intended functionality before analyzing the security weakness.
+Establish the affected functionality and intended application workflow.
 
 #### 2. Identify the Vulnerability
 
-Understand the conditions and behaviors responsible for the vulnerability.
+Understand the conditions that introduce the security weakness.
 
 #### 3. Determine the Root Cause
 
-Focus on the underlying engineering mistake instead of simply reproducing exploitation steps.
+Focus on the underlying engineering mistake rather than simply reproducing exploitation steps.
 
 #### 4. Compare Application Behavior
 
-Distinguish expected, secure interactions from vulnerable interactions.
+Separate normal interactions from vulnerable interactions and explain their differences.
 
 #### 5. Maintain Technical Accuracy
 
-Require logically consistent technical explanations and HTTP examples.
+Require logically consistent technical explanations, HTTP requests, and HTTP responses.
 
 #### 6. Evaluate Educational Difficulty
 
-Assess the reasoning and technical knowledge required to understand each scenario.
+Assess the reasoning and technical knowledge required to understand the scenario.
 
-#### 7. Preserve Consistency
+#### 7. Preserve Educational Consistency
 
-Follow a structured educational format across different Labs.
+Maintain a structured learning format across different vulnerability categories.
 
-#### 8. Review the Output
+#### 8. Separate Facts from Assumptions
 
-Treat AI-assisted analysis and generated code as material requiring independent technical review.
+Distinguish documented research findings from illustrative or reconstructed behavior.
+
+#### 9. Review Before Publication
+
+Treat AI-assisted analysis and generated implementations as outputs requiring validation.
 
 ### Codex Skills
 
-We used Skills to support reusable, specialized workflows.
+We used reusable Skills to support specialized tasks and maintain consistent instructions across our development workflow.
 
-These workflows helped maintain consistency across research, technical explanations, development, troubleshooting, and quality review activities.
+These workflows supported activities involving:
 
-The benefit of reusable Skills is that technical requirements do not have to be reconstructed for every individual task.
+- Research analysis.
+- Vulnerability understanding.
+- Technical explanation structure.
+- Educational scenario design.
+- Software development.
+- Code review.
+- Troubleshooting.
+- Quality checking.
+- Maintaining consistency between Labs.
 
 ### Plugins
 
 Plugins extended the capabilities available during relevant research and engineering activities.
 
-They supported our broader approach of combining external technical information, structured analysis, and practical development.
+They supported our broader objective of connecting technical information, structured analysis, and practical development within a more organized workflow.
 
-### Combining the Components
+### How the Components Worked Together
 
 ```mermaid
 flowchart TD
-    A["Real-World Security Research"] --> B["Engineered Prompts"]
+    A["Public Vulnerability Research"] --> B["Engineered Prompts"]
     B --> C["OpenAI Codex"]
     D["Reusable Skills"] --> C
     E["Plugins"] --> C
     C --> F["Technical Analysis and Development"]
-    F --> G["Human Review and Validation"]
-    G --> H["Educational Labs"]
+    F --> G["Scenario Design and Classification"]
+    G --> H["Human Review and Validation"]
+    H --> I["BLACK SECTOR Labs"]
 ```
 
-This methodology helped us approach complex technical tasks more systematically.
-
-**The objective was not simply to generate more content. It was to improve the consistency, depth, and educational value of the resulting Labs.**
+**The objective was not simply to generate content, but to improve the consistency, depth, and educational value of the resulting Labs.**
 
 ---
 
 ## AI-Assisted Vulnerability Classification
 
-A major part of our educational methodology is evaluating and organizing vulnerability scenarios according to difficulty.
+One of our important objectives was to organize vulnerability scenarios according to educational difficulty.
 
-We used structured Codex-assisted analysis to help assess the complexity of security scenarios and support their educational classification.
+We used structured Codex-assisted analysis to help evaluate scenario complexity and support difficulty classification.
 
-This process considers the technical reasoning required to understand each vulnerability.
+This makes the learning experience more organized and helps students progress gradually.
 
 ### Why Difficulty Classification Matters
 
-Cybersecurity learners do not all have the same level of experience.
+A beginner should not be expected to understand a complex security weakness before learning the concepts required to analyze it.
 
-An unstructured collection of security reports can expose beginners to complex exploitation conditions before they understand fundamental concepts.
+Similarly, experienced learners benefit from scenarios that require deeper technical reasoning.
 
-We wanted learners to progress gradually.
+Our approach therefore separates scenarios by educational complexity.
 
 ### Learning Difficulty Levels
 
-| Level | Focus | Expected Learning |
+| Level | Focus | Learning Objective |
 |---|---|---|
-| Easy | Fundamental vulnerabilities | Understand direct security failures and clear behavioral differences |
-| Medium | Intermediate application weaknesses | Analyze more complex workflows and subtle security mistakes |
-| Advanced | Complex technical scenarios | Understand multiple conditions, deeper root causes, and advanced reasoning |
+| **Easy** | Fundamental vulnerabilities | Understand basic security failures and direct behavioral differences |
+| **Medium** | Intermediate weaknesses | Analyze more complex workflows, implementation mistakes, and security boundaries |
+| **Advanced** | Complex technical scenarios | Understand multiple conditions, subtle failures, and advanced technical reasoning |
 
 ### Classification Criteria
 
-Educational difficulty can depend on:
+Difficulty assessment considers factors such as:
 
 - Complexity of the application workflow.
 - Technical knowledge required.
 - Number of interacting conditions.
 - Subtlety of the vulnerability.
+- Complexity of the affected security boundary.
 - Difficulty of identifying the root cause.
-- Complexity of the security boundaries.
 - Amount of technical reasoning required.
 
-### Difficulty Is Not Severity
+### Educational Difficulty vs. Security Severity
 
-An important distinction is that educational difficulty and security severity are not the same.
+Educational difficulty and security severity are not the same.
 
-A high-impact vulnerability can be relatively straightforward to understand.
+A high-impact vulnerability can be straightforward to understand.
 
-Likewise, a technically complex vulnerability may not have the highest security impact.
+Likewise, a technically complex vulnerability may not necessarily have the highest security impact.
 
-Our classification focuses on the learning challenge rather than simply assigning difficulty based on impact.
+Our difficulty classification focuses on the learning challenge rather than simply assigning difficulty based on impact.
 
 ### Progressive Learning Model
 
@@ -397,15 +434,16 @@ flowchart TD
 
 ### Educational Benefits
 
-Difficulty classification helps learners:
+Difficulty classification helps students:
 
-- Select appropriate scenarios.
-- Build foundational knowledge.
-- Progress toward advanced material.
-- Understand increasingly complex weaknesses.
-- Develop analytical skills systematically.
+- Start with accessible security concepts.
+- Develop foundational knowledge.
+- Select scenarios appropriate to their experience.
+- Progress toward more complex weaknesses.
+- Recognize increasingly subtle vulnerability patterns.
+- Build analytical skills systematically.
 
-**The objective is structured learning, not random exposure to exploitation techniques.**
+**The goal is progressive learning rather than random exposure to exploitation techniques.**
 
 ---
 
@@ -413,59 +451,143 @@ Difficulty classification helps learners:
 
 BLACK SECTOR organizes educational scenarios into a consistent learning experience.
 
-### Lab Catalog
+### 1. Lab Catalog
 
-The public Lab catalog presents different cybersecurity topics and provides access to their scenarios.
+The public catalog provides access to different cybersecurity vulnerability categories.
 
-Learners can choose the area they want to explore.
+Learners can select the subject they want to study.
 
-### Scenario Selection
+### 2. Scenario Selection
 
-Within a Lab, learners can navigate available scenarios and examine specific vulnerability concepts.
+Within each Lab, learners can browse and select relevant vulnerability scenarios.
 
-### Scenario Overview
+The scenarios are organized to make navigation and learning progression easier.
 
-Each relevant scenario provides context about the application behavior and the vulnerability being investigated.
+### 3. Scenario Overview
 
-### HTTP Requests and Responses
+Each relevant scenario introduces the affected application functionality and the security weakness being investigated.
 
-The educational interface allows learners to inspect and compare technical interactions.
+### 4. Normal Application Behavior
 
-These examples help establish the expected application behavior and illustrate how a vulnerable implementation differs.
+The learner examines the intended workflow and expected application responses.
 
-### Root Cause Analysis
+### 5. HTTP Requests and Responses
 
-The technical explanation connects the observed behavior to the underlying implementation failure.
+Scenarios provide technical examples that help learners examine application behavior.
 
-### Security Fix
+### 6. Vulnerable Application Behavior
 
-Where relevant, learners can study the security control or implementation change needed to prevent the weakness.
+The learner compares the expected interaction with the behavior that occurs when a security control fails.
 
-### Learning Progression
+### 7. Root Cause Analysis
 
-Difficulty classification helps learners select scenarios that match their current technical understanding.
+The explanation connects the observed behavior to the underlying implementation mistake.
+
+### 8. Security Fix
+
+Where appropriate, learners study the security controls or implementation changes needed to prevent similar weaknesses.
+
+### 9. Learning Progression
+
+Difficulty classification helps students select scenarios that match their current knowledge and progress toward more advanced material.
 
 ### Experience the Actual Interface
 
-The interactive interface, scenario content, and HTTP examples are available on the live website.
+The interactive scenarios and technical content are available through the live platform.
 
 **[OPEN THE LIVE LABS](https://blacksector.cc/labs/)**
 
 ---
 
+## BLACK SECTOR Labs — Screenshots
+
+The following screenshots show the actual BLACK SECTOR educational interface.
+
+They demonstrate how vulnerability categories, learning progression, and technical HTTP interactions are presented to learners.
+
+### 1. Interactive Labs Overview
+
+![BLACK SECTOR Labs Overview](screenshots/labs-overview.jpg)
+
+*The BLACK SECTOR Lab catalog provides access to interactive cybersecurity learning modules and vulnerability categories.*
+
+Through the catalog, learners can:
+
+- Explore different security topics.
+- Review available educational content.
+- Select a Lab.
+- Navigate to relevant vulnerability scenarios.
+- Continue developing their cybersecurity knowledge.
+
+### 2. Research-Backed Scenarios and Learning Categories
+
+![BLACK SECTOR Lab Categories](screenshots/labs-categories.jpg)
+
+*The educational interface organizes vulnerability scenarios and helps learners explore different levels of technical complexity.*
+
+The learning experience emphasizes:
+
+- Research-backed security concepts.
+- Structured vulnerability categories.
+- Difficulty-based progression.
+- Scenario selection.
+- Technical learning objectives.
+- Access to relevant published research references.
+
+### 3. Understanding Normal Application Behavior
+
+![BLACK SECTOR HTTP Before](screenshots/http-before.jpg)
+
+*An example of the HTTP interaction presented before the vulnerable behavior is examined.*
+
+Students can analyze the legitimate request and understand:
+
+- What the client sends to the application.
+- Which functionality is being accessed.
+- What behavior is expected.
+- Which security controls should be applied.
+
+This establishes the technical context needed to understand the vulnerability.
+
+### 4. Examining Vulnerable Application Behavior
+
+![BLACK SECTOR HTTP After](screenshots/http-after.jpg)
+
+*An example of the HTTP response shown after a vulnerable interaction.*
+
+The learner can compare this result with the expected application behavior to understand:
+
+- What changed in the interaction.
+- How the application responded.
+- Why the behavior represents a security weakness.
+- Which security boundary failed.
+- What technical mistake caused the vulnerability.
+
+### From Screenshots to Interactive Learning
+
+These screenshots provide a preview of the platform.
+
+The complete learning experience, including scenario navigation, HTTP comparisons, explanations, and available research references, is provided through the live BLACK SECTOR website.
+
+### Explore the Actual Labs
+
+**[TRY BLACK SECTOR INTERACTIVE LABS](https://blacksector.cc/labs/)**
+
+---
+
 ## Normal vs. Vulnerable Behavior
 
-Understanding the difference between normal and vulnerable application behavior is central to our approach.
+Understanding the difference between expected and vulnerable application behavior is a central principle of our educational methodology.
 
-A security weakness is easier to understand when the learner first understands what the application is supposed to do.
+We believe a security weakness is easier to understand when the learner first understands what the application is supposed to do.
 
 ### Illustrative Example: Broken Access Control
 
-Consider an application that allows authenticated users to retrieve account details.
-
-A legitimate user requests information belonging to their account.
+Consider an application that allows authenticated users to retrieve account information.
 
 ### Normal Request
+
+A user requests information belonging to their own account.
 
 ```http
 GET /api/accounts/1001 HTTP/1.1
@@ -486,11 +608,11 @@ Content-Type: application/json
 }
 ```
 
-The application verifies the user's identity and checks whether they are authorized to access the requested resource.
+The application validates the user's identity and checks whether they are authorized to access the requested resource.
 
 ### Vulnerable Request
 
-The same user changes the account identifier to request a different account.
+The same user attempts to access a different account.
 
 ```http
 GET /api/accounts/1002 HTTP/1.1
@@ -511,17 +633,17 @@ Content-Type: application/json
 }
 ```
 
-The application returns information belonging to another account without enforcing the required authorization check.
+In this vulnerable implementation, the application returns information belonging to another account.
 
 ### Root Cause
 
 The server validates authentication but fails to enforce resource-level authorization.
 
-The security weakness exists because identifying the user does not automatically establish permission to access every resource.
+The vulnerability occurs because identifying a user does not automatically establish permission to access every resource.
 
 ### Secure Response
 
-A secure implementation should reject unauthorized requests.
+A properly implemented authorization control should reject unauthorized access.
 
 ```http
 HTTP/1.1 403 Forbidden
@@ -534,78 +656,83 @@ Content-Type: application/json
 
 ### Behavior Comparison
 
-| Component | Expected Behavior | Vulnerable Behavior |
+| Component | Normal Behavior | Vulnerable Behavior |
 |---|---|---|
 | Authentication | User identity validated | User identity validated |
-| Resource Ownership | Checked | Not correctly enforced |
+| Resource Ownership | Correctly checked | Not correctly enforced |
 | Authorization | Required | Missing or insufficient |
-| Data Access | Authorized resources only | Unauthorized resources may be exposed |
+| Data Access | Authorized data only | Unauthorized data may be exposed |
 | Result | Security boundary preserved | Security boundary violated |
 
-### What the Learner Understands
+### What the Student Learns
 
-- Authentication and authorization are different.
-- Resource ownership must be validated.
-- Changing an identifier should not bypass authorization.
-- The vulnerable response exposes an authorization failure.
-- The root cause is the missing resource-level access control.
+The learner can understand:
 
-This is a simplified illustrative example of the learning methodology, not an HTTP trace copied from a specific published vulnerability report.
+- The intended application functionality.
+- The difference between authentication and authorization.
+- The security boundary that should exist.
+- The behavior introduced by the vulnerability.
+- The underlying root cause.
+- The expected result after implementing proper authorization.
 
-The real BLACK SECTOR Labs contain their own scenarios and technical examples.
+*This is a simplified illustrative example of the educational methodology, not an HTTP trace reproduced from a specific published vulnerability report.*
+
+The live BLACK SECTOR Labs contain their own educational scenarios and technical examples.
 
 ---
 
 ## Connecting Labs to Original Research
 
-BLACK SECTOR aims to preserve the connection between educational scenarios and their original research context.
+An important part of our educational approach is maintaining the connection between interactive scenarios and the research behind them.
 
-For report-backed cases, the published security writeup provides additional technical information about the vulnerability.
+### Published Vulnerability Writeups
 
-### Copy Link and Research References
+For report-backed cases, publicly available vulnerability writeups provide additional technical context.
 
-The platform includes a **Copy link** feature associated with its educational scenario experience.
+These sources help interested learners move beyond the educational scenario and study how the underlying weakness was documented in a real-world setting.
 
-For report-backed scenarios linked to original research, the relevant published writeup serves as a reference that learners can explore.
+### Copy Link and Original Research References
 
-This supports independent research and source verification.
+BLACK SECTOR includes a **Copy link** feature within its scenario experience.
 
-Learners can use these references to:
+For research-backed scenarios that provide an original published report URL, the source reference allows learners to explore the real-world research behind the educational case.
 
-- Read the original public vulnerability report.
-- Understand the affected application's real-world context.
-- Compare published findings with educational explanations.
+These references can help students:
+
+- Read the original vulnerability report.
+- Understand the affected application's context.
+- Compare the published findings with the educational explanation.
 - Explore additional technical details.
-- Review the original researcher's observations.
-- Strengthen independent security research skills.
+- Study the original researcher's observations.
+- Develop independent research skills.
 
 ### Why Attribution Matters
 
-Our goal is not to replace published vulnerability research or claim ownership of original reports.
+Our goal is not to replace original security research or claim ownership of published vulnerability reports.
 
-We use public research to understand security concepts and develop educational explanations.
+Instead, we use research findings to help explain complex security concepts through interactive educational experiences.
+
+**Published Research → Technical Understanding → Educational Scenario → Independent Learning**
 
 Original reports remain the work of their respective researchers and publishers.
 
-**Published Research → Technical Understanding → Interactive Educational Scenarios**
-
 ---
 
-## The Complete Development Workflow
+## Complete Development Workflow
 
-Our methodology connects security research with AI-assisted engineering and educational development.
+The development methodology connects extensive cybersecurity research with structured AI-assisted engineering and educational design.
 
 ### Stage 1 — Research Collection
 
-Study publicly available vulnerability writeups and identify relevant security concepts.
+Study real-world public vulnerability writeups and identify relevant security concepts.
 
 ### Stage 2 — Technical Analysis
 
-Understand the affected functionality, expected behavior, exploitation conditions, and underlying root cause.
+Understand the affected functionality, expected application behavior, vulnerability conditions, and underlying root causes.
 
 ### Stage 3 — Codex-Assisted Analysis
 
-Use carefully structured prompts, supported by relevant Skills and Plugins, to assist with organizing and analyzing technical information.
+Use carefully engineered prompts, supported by relevant Skills and Plugins, to assist with technical analysis and research organization.
 
 ### Stage 4 — Difficulty Assessment
 
@@ -613,41 +740,42 @@ Evaluate the educational complexity of selected vulnerability scenarios.
 
 ### Stage 5 — Educational Classification
 
-Organize scenarios into appropriate difficulty levels to support progressive learning.
+Organize scenarios according to appropriate difficulty levels.
 
-### Stage 6 — Scenario Development
+### Stage 6 — Scenario Design
 
-Translate vulnerability concepts into structured educational explanations, realistic HTTP interactions, and behavioral comparisons.
+Translate technical findings into structured educational experiences centered on expected behavior, vulnerable behavior, and root cause analysis.
 
 ### Stage 7 — Software Implementation
 
-Develop and refine the interactive learning experience using AI-assisted engineering workflows.
+Develop and refine the interactive learning interfaces with support from Codex.
 
 ### Stage 8 — Technical Validation
 
-Review vulnerability explanations, example requests and responses, functionality, and consistency.
+Review explanations, HTTP examples, scenario logic, and implementation consistency.
 
 ### Stage 9 — Website Integration
 
-Integrate the completed educational Labs into the BLACK SECTOR platform.
+Integrate the educational Labs into the existing BLACK SECTOR platform.
 
 ### Stage 10 — Public Release
 
-Make the educational content accessible through the live website.
+Publish the educational content through the website so learners can access and explore it.
 
 ### Workflow Overview
 
 ```mermaid
 flowchart TD
-    A["1,000+ Security Writeups"] --> B["Technical Research"]
-    B --> C["Codex + Prompts + Skills + Plugins"]
-    C --> D["Vulnerability and Root Cause Analysis"]
-    D --> E["Difficulty Assessment"]
-    E --> F["Educational Classification"]
-    F --> G["Interactive Scenario Development"]
-    G --> H["Technical Review"]
-    H --> I["BLACK SECTOR Website Integration"]
-    I --> J["Public Cybersecurity Education"]
+    A["1,000+ Security Writeups"] --> B["Research and Technical Analysis"]
+    B --> C["Codex + Engineered Prompts"]
+    C --> D["Skills and Plugins"]
+    D --> E["Vulnerability and Root Cause Analysis"]
+    E --> F["Difficulty Assessment"]
+    F --> G["Educational Classification"]
+    G --> H["Interactive Scenario Development"]
+    H --> I["Technical Review and Validation"]
+    I --> J["BLACK SECTOR Website Integration"]
+    J --> K["Public Cybersecurity Education"]
 ```
 
 **Research → Analysis → Classification → Development → Validation → Publication**
@@ -656,9 +784,9 @@ flowchart TD
 
 ## From Research to a Public Platform
 
-The final stage of the project was transforming the research and development work into a usable educational experience.
+The final stage was transforming the research and development work into a real educational product.
 
-Rather than keeping the results as isolated documents or demonstrations, we integrated the educational Labs into the BLACK SECTOR website.
+Rather than keeping the results as isolated notes, generated documents, or technical demonstrations, we integrated the resulting educational Labs into BLACK SECTOR.
 
 ### Why Website Integration Matters
 
@@ -669,26 +797,24 @@ The website provides a centralized learning environment where students can:
 - Follow difficulty-based progression.
 - Study expected application behavior.
 - Examine vulnerable interactions.
-- Compare HTTP requests and responses.
+- Inspect HTTP requests and responses.
 - Understand technical root causes.
-- Explore relevant original research references.
-- Learn about security controls and fixes.
+- Explore relevant published security research.
+- Learn about remediation and security controls.
 
 ### Public Accessibility
 
-Our objective was to make the educational material available to people interested in cybersecurity learning.
+The educational Labs are available through the public BLACK SECTOR website.
 
-The Labs can be accessed through the public BLACK SECTOR website.
+Learners can visit the platform, explore the available topics, and choose the scenarios they want to study.
 
-The educational platform provides the interactive experience directly, while this repository documents the methodology used to develop it.
+The repository documents our methodology.
 
-### Explore the Published Result
+**The BLACK SECTOR website provides the actual interactive learning experience.**
 
-**[BLACK SECTOR — LIVE INTERACTIVE LABS](https://blacksector.cc/labs/)**
+### Explore the Final Result
 
-The repository is the technical and educational project overview.
-
-The website is where learners can explore the actual Labs.
+**[BLACK SECTOR — LIVE INTERACTIVE CYBERSECURITY LABS](https://blacksector.cc/labs/)**
 
 ---
 
@@ -696,25 +822,23 @@ The website is where learners can explore the actual Labs.
 
 ### Learning Through Understanding
 
-Our approach emphasizes the reasoning behind security weaknesses.
-
-Students learn to identify relationships between intended functionality, unexpected behavior, and underlying implementation mistakes.
+We emphasize the technical reasoning behind vulnerabilities rather than simply reproducing exploitation techniques.
 
 ### Learning Through Comparison
 
-Comparing normal and vulnerable behavior provides technical context that isolated exploitation examples may not offer.
+Comparing normal and vulnerable behavior helps students understand how security weaknesses become observable.
 
 ### Learning Through Real Research
 
-Public vulnerability writeups help connect educational material with security findings observed in real applications.
+Published vulnerability reports provide valuable insights into how weaknesses arise in actual applications.
 
 ### Learning Through Progression
 
-Difficulty classification provides a more organized path from fundamental concepts toward advanced security reasoning.
+Difficulty classification supports a gradual progression from fundamental concepts toward advanced security reasoning.
 
 ### Learning Through Technical Detail
 
-HTTP requests, responses, root causes, and remediation explanations help learners understand how security concepts appear in actual application interactions.
+Realistic HTTP requests, responses, root causes, and remediation explanations provide a more practical understanding of security concepts.
 
 ---
 
@@ -726,11 +850,11 @@ The platform is designed for:
 - Penetration testing learners.
 - Security researchers.
 - Bug bounty learners.
-- Application security enthusiasts.
 - Developers interested in secure software engineering.
+- Application security enthusiasts.
 - Advanced learners studying complex vulnerability patterns.
 
-Our goal is to support practical understanding while keeping the educational content organized and technically meaningful.
+Our goal is to support practical cybersecurity education while maintaining technical depth and a structured learning experience.
 
 ---
 
@@ -738,62 +862,66 @@ Our goal is to support practical understanding while keeping the educational con
 
 ### Research-Driven Content
 
-The methodology draws on more than 1,000 real-world security writeups.
+Our educational methodology draws on the analysis of more than 1,000 public vulnerability writeups.
 
 ### Structured AI-Assisted Development
 
-Codex, engineered prompts, Skills, and Plugins supported the research and engineering workflow.
+Codex, engineered prompts, Skills, and Plugins supported the research and development workflow.
 
 ### Root Cause-Focused Education
 
-The Labs focus on why vulnerabilities occur rather than only how they can be reproduced.
+We emphasize why vulnerabilities occur rather than presenting exploitation steps without context.
 
 ### Behavioral Comparison
 
-Learners study normal application functionality before examining vulnerable behavior.
+Learners study expected application behavior and compare it with vulnerable interactions.
 
 ### Progressive Classification
 
-Scenarios are organized according to educational complexity to support structured learning.
+Scenarios are organized according to educational complexity.
 
 ### Research Attribution
 
-Original public writeups provide additional context for research-backed educational scenarios.
+Published report references help connect educational scenarios to original research.
 
 ### Interactive Learning
 
-The material is integrated into a practical website rather than remaining isolated documentation.
+The content is presented through an actual learning platform rather than remaining isolated documentation.
+
+### Real Product Integration
+
+The Labs are integrated into BLACK SECTOR and made publicly accessible for learning.
 
 ### Continuous Improvement
 
-The platform continues to evolve through research, technical review, and iterative development.
+The platform continues to evolve through research, technical review, and iterative engineering.
 
 ---
 
 ## Technical Accuracy and Quality Control
 
-Cybersecurity education requires careful technical validation.
+Cybersecurity education requires technical precision.
 
 Our methodology emphasizes:
 
 - Grounding research-backed scenarios in public technical findings.
 - Distinguishing documented facts from illustrative examples.
 - Reviewing vulnerability conditions.
-- Checking technical explanations for logical consistency.
+- Checking explanations for logical consistency.
 - Evaluating HTTP requests and responses.
-- Identifying actual root causes.
+- Identifying the actual root cause.
 - Maintaining consistent educational structure.
 - Preserving appropriate source attribution.
 - Avoiding unsupported technical claims.
-- Restricting practical security testing to authorized environments.
+- Performing practical security testing only in authorized environments.
 
 ### Human Review
 
-Codex assists with technical work, but generated content and code are not automatically reliable.
+Codex assists with technical work, but generated outputs are not automatically reliable.
 
-Human review remains essential for assessing the accuracy, consistency, and educational value of the final material.
+Technical explanations and implementations still require review and validation.
 
-**AI-assisted development is a tool for improving engineering productivity, not a replacement for technical judgment.**
+**AI-assisted engineering improves productivity, but it does not replace technical judgment.**
 
 ---
 
@@ -801,31 +929,31 @@ Human review remains essential for assessing the accuracy, consistency, and educ
 
 ### 1. Prompt Quality Matters
 
-Well-defined objectives and technical constraints improve the usefulness and consistency of AI-assisted workflows.
+Clearly defined objectives, constraints, and technical requirements improve the usefulness of AI-assisted workflows.
 
 ### 2. Real-World Research Improves Educational Depth
 
-Published vulnerability reports provide valuable insight into how security weaknesses arise in actual applications.
+Published vulnerability reports provide valuable insights into how security weaknesses appear in actual applications.
 
 ### 3. Root Cause Analysis Is Essential
 
 Understanding why a vulnerability exists provides deeper knowledge than memorizing exploitation steps.
 
-### 4. Difficulty Classification Helps Learners Progress
+### 4. Difficulty Classification Improves Learning
 
-A structured progression allows students to build foundational skills before approaching more complex concepts.
+Structured progression helps students build foundational knowledge before approaching complex scenarios.
 
 ### 5. Reusable Workflows Improve Consistency
 
-Skills and structured prompting help maintain common quality requirements across related tasks.
+Skills and engineered prompts help preserve common technical and educational requirements.
 
 ### 6. AI Requires Verification
 
-Technical explanations and implementations need independent evaluation, even when supported by capable AI tools.
+AI-generated explanations and implementations should be independently evaluated before publication.
 
-### 7. Real Deployment Creates Practical Value
+### 7. Publishing the Result Creates Practical Value
 
-Publishing the results through an accessible platform allows research and development work to benefit actual learners.
+Transforming research into an accessible platform allows more learners to benefit from the work.
 
 ---
 
@@ -833,75 +961,77 @@ Publishing the results through an accessible platform allows research and develo
 
 BLACK SECTOR is an evolving educational project.
 
-Our ongoing priorities include:
+Our priorities include:
 
-- Expanding high-quality research-backed educational scenarios.
+- Expanding high-quality research-backed vulnerability scenarios.
 - Improving technical explanations and root cause analysis.
-- Refining difficulty classification.
+- Refining scenario difficulty classification.
 - Maintaining consistent Lab interfaces.
 - Improving platform performance and reliability.
-- Continuing to explore advanced Codex-assisted engineering workflows.
+- Exploring advanced Codex-assisted engineering workflows.
 - Developing reusable research and development practices.
-- Sharing technical knowledge with the cybersecurity community.
+- Sharing practical knowledge with cybersecurity communities.
 - Exploring future AI-assisted capabilities for education and authorized security testing.
 
-These are ongoing priorities and development directions, not claims that every planned capability has already been completed.
+These are ongoing priorities and development directions, not claims that every planned capability has already been implemented.
 
 ---
 
 ## Why We Are Sharing This Project
 
-We want to demonstrate how AI-assisted development can contribute to practical cybersecurity education.
+We want to demonstrate how AI-assisted development can contribute to meaningful cybersecurity education.
 
-BLACK SECTOR combines:
+BLACK SECTOR combines several disciplines:
 
 **Cybersecurity Research · Software Engineering · Prompt Engineering · AI-Assisted Development · Educational Design**
 
-Our experience demonstrates how extensive public security research can be transformed into a more structured learning experience with the support of OpenAI Codex.
+Our experience demonstrates how extensive public vulnerability research can be organized and transformed into structured learning experiences with the support of OpenAI Codex.
 
 We hope this project encourages developers and educators to explore responsible AI-assisted workflows while maintaining technical accuracy, research attribution, and human review.
 
-We are especially interested in making advanced cybersecurity education more accessible to Arabic-speaking learners and the wider international technical community.
+We are especially interested in making advanced cybersecurity learning more accessible to Arabic-speaking technical communities and the wider international cybersecurity community.
 
 ---
 
 ## Frequently Asked Questions
 
-### Are there more than 1,000 Labs?
+### Are There More Than 1,000 Labs?
 
 No.
 
-The 1,000+ figure refers to the real-world vulnerability writeups researched and analyzed during the development process.
+The 1,000+ figure refers to researched real-world vulnerability writeups.
 
 It does not represent the number of individual published Labs.
 
-### Are all scenarios based on published reports?
+### Are All Scenarios Based on Published Reports?
 
 The platform distinguishes research-backed scenarios from illustrative or hypothetical educational cases.
 
 Not every educational example represents a direct reproduction of a publicly documented vulnerability.
 
-### Does Codex automatically guarantee technical accuracy?
+### Does Codex Automatically Guarantee Technical Accuracy?
 
 No.
 
-Codex supports analysis and development, but technical content still requires independent validation and review.
+Codex supports analysis and development, but technical outputs still require independent verification.
 
-### How are scenarios organized by difficulty?
+### How Are Scenarios Classified?
 
-Scenarios are assessed according to educational complexity, required technical knowledge, and the reasoning needed to understand the security weakness.
+Scenarios are assessed according to educational complexity, required technical knowledge, and the reasoning needed to understand the underlying security weakness.
 
-### Can learners access the Labs through GitHub?
+### Where Can I Study the Vulnerabilities?
 
-GitHub provides the project documentation.
-
-The actual interactive educational Labs are available through the BLACK SECTOR website.
-
-### Where can I try the Labs?
-
-Visit:
+The interactive Labs are available through the BLACK SECTOR website.
 
 **https://blacksector.cc/labs/**
+
+### Does This Repository Contain the Entire Website Source Code?
+
+No.
+
+This repository documents the project methodology, research-to-development workflow, and educational experience.
+
+The actual interactive Labs are provided through the public BLACK SECTOR platform.
 
 ---
 
@@ -909,7 +1039,7 @@ Visit:
 
 ### Start Learning
 
-The educational Labs are available through our official website.
+The complete interactive learning experience is available on the official website.
 
 **[OPEN BLACK SECTOR INTERACTIVE CYBERSECURITY LABS](https://blacksector.cc/labs/)**
 
@@ -919,9 +1049,9 @@ The educational Labs are available through our official website.
 |---|---|
 | Official Website | [blacksector.cc](https://blacksector.cc) |
 | Interactive Labs | [BLACK SECTOR Labs](https://blacksector.cc/labs/) |
-| Codex Community Documentation | [Community Repository](https://github.com/Ahmed80325/black-sector-codex-community) |
+| Community Documentation | [Codex Community Repository](https://github.com/Ahmed80325/black-sector-codex-community) |
 
-### Focus Areas
+### Project Focus
 
 Cybersecurity Education · Real-World Vulnerability Research · Interactive Labs · OpenAI Codex · Prompt Engineering · Skills & Plugins · Root Cause Analysis · Progressive Learning
 
@@ -935,7 +1065,7 @@ It is not affiliated with, sponsored by, or endorsed by OpenAI.
 
 References to OpenAI Codex, Skills, and Plugins describe tools used within our research and development workflow.
 
-The educational material is intended for responsible learning and authorized security testing.
+All vulnerability examples and educational scenarios are intended for responsible learning and authorized security testing.
 
 Original published vulnerability reports remain the work of their respective researchers and publishers.
 
@@ -943,10 +1073,10 @@ Original published vulnerability reports remain the work of their respective res
 
 ## BLACK SECTOR — Learn. Build. Secure.
 
-**From 1,000+ Real-World Security Writeups → Engineered Codex Workflows → Difficulty Classification → Interactive Security Labs → Public Cybersecurity Education.**
+**From 1,000+ Real-World Security Writeups → Structured Codex Workflows → Difficulty Classification → Interactive Labs → Public Cybersecurity Education.**
 
 ### Explore the Final Result
 
 **[BLACK SECTOR — LIVE INTERACTIVE LABS](https://blacksector.cc/labs/)**
 
-*Turning real-world cybersecurity research into practical education through structured analysis and AI-assisted engineering.*
+*Turning real-world cybersecurity research into practical learning through structured analysis and AI-assisted engineering.*
